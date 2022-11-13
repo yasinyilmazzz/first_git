@@ -12,4 +12,56 @@ git push -u origin main
 git add .
 git commit -m "Hello World"
 git push
-ANkaralı namık derki
+
+=======
+Git : Local Repo
+GitHub : Remote Repo
+Steps for pushing the first project?
+git init
+git add .  ===>>>> add all projects in the staging area.
+git add “file1name”  ====>>>> add only one single file in the staging area
+git add “file2name”  ====>>>> add only one single file in the staging area
+git commit -m “message”
+git branch -M main
+ git remote add origin https...  github repository link
+git push -u origin main
+Steps for pushing new commits for the same project
+Git add .
+Git commit -m “message”
+Git push
+
+==========
+
+Steps for getting the code from remote repo?
+git pull
+git fetch + git merge = git pull
+What is conflict? When I happens?
+It is the error texts in the files
+It happens when devs pulls the code
+It happens Same lines has different codes
+How to resolve conflict?
+Manually fix it
+Steps after conflict?
+Manually fix and push the clean code
+Git add .
+Git commit -m
+Git push
+Can I push the my local commits if I do not have the latest commit from GitHub
+No. Because of the security, we must have the latest code/commit from GitHub
+PULL BEFORE PUSH => (git pull -> git add . -> git commit -m “message” -> git push)
+
+===========
+Create a new branch : git branch ahmet
+ Check the branches: git branch -> you should see ahmet branch
+Switch to the feature branch : git checkout ahmet
+Now I’m on the feature branch. All changes I make will be only on this branch
+Create a new class and write some code on this branch
+MyLocalClass1
+Create a new version on the branch
+    git add .
+    git commit -m “my local commit 1"
+    git push --->>> NOTE : Gives error. First push must be done using below code
+    git push --set-upstream origin ahmet
+Check if your codes are in remote repository
+Question 1: Does ahmet branch have the codes we just pushed? YESSSSSSS
+Question 2: Does master have the codes we just pushed?  NOOOOO. WE HAVE TO MERGE ALL CODES TO MASTER.NEXT SLIDE
