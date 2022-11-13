@@ -65,3 +65,11 @@ Create a new version on the branch
 Check if your codes are in remote repository
 Question 1: Does ahmet branch have the codes we just pushed? YESSSSSSS
 Question 2: Does master have the codes we just pushed?  NOOOOO. WE HAVE TO MERGE ALL CODES TO MASTER.NEXT SLIDE
+1. git branch ahmet_sprint10_canary
+2. git checkout ahmet_sprint10_canary
+3. Write your code in this feature branch
+-crate a new file in feature branch: Notes9.txt
+-commit the the code
+	-git add .
+	-git commit -m "message"
+	 git push --set-upstream origin ***"branch name"***git checkot out
