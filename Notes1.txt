@@ -73,3 +73,85 @@ Question 2: Does master have the codes we just pushed?  NOOOOO. WE HAVE TO MERGE
 	-git add .
 	-git commit -m "message"
 	 git push --set-upstream origin ***"branch name"***git checkot out
+
+
+GITHUB DAY 1:
+FIRST CODE PUSH:
+git init  ->>>> Create a .git folder in our computer
+git add .  ->>>
+git commit -m "first commit" ->>> Create a new version
+git branch -M main ->>> Creating a new branch called main
+git remote add origin YOURPROJECTLINK ->>> Connects Local Project(git) to Remote repository(github)
+git push -u origin main
+=========
+SECOND CODE PUSH:
+git add .
+git commit -m "updating the code"
+git push
+=========
+GIT IGNORE:
+WHAT? 
+.gitignore should be created at the project level
+It is used to ignore/hide the files
+The files in .gitignore will not be added and committed and pused
+-----------------------------------
+Example:
+create 3 files : Notes2.txt, Notes3.txt, Notes4.txt
+And Create .gitignore file in the project level
+Then put Notes3.txt path in .gitignore file
+Then commit
+Then push
+Then Notes3.txt should not be pushed in GitHub
+NOTE: MAKE SURE TO SAVE AFTER EACH CHANGE controll+s
+============
+GIT PULL
+: Please, commit your changes before merging.
+git add .
+git commit -m "message"
+git pull -> GOT ERROR Saying pull before push
+git pull 
+git add .
+git commit - "message"
+git push -> NO ERROR
+NOTE: GIT PULL before GIT PUSH
+============
+GIT CONFLICT:
+Occurs when same class and line have different code
+When we merge these codes then we get conflict message
+SOLUTION: 
+Manually fix and create a new commit and push the clean code
+===========
+
+
+DAY02
+BRANCHING
+1. git branch ahmet_sprint10_canary
+2. git checkout ahmet_sprint10_canary
+3. Write your code in this feature branch
+-crate a new file in feature branch: Notes9.txt
+-commit the the code
+    -git add .
+    -git commit -m "message"
+    -git push --set-upstream origin ahmet_sprint10_canary
+-After the last step, Pull Request will automatically created in GITHUB
+-Then the reponsible person will review the pull request and merge code to master branch
+========
+After the merge, feature branches and REMOTE MASTER is p to date
+BUT local master is not updated
+=======
+4. git checkout main
+5. git pull
+============
+COLLABARATION:
+Since there is only one project at work, and all devs must work
+on the same project, it is important to understand how collabaration is done
+--------
+*All company projects are private. We get access to the project,
+and become a collabarator. Then we can make changes in the project and push it.
+*We should not work on the master/main branch. We need to create a new branch,
+write our code in that branch, and pushed.
+*After we push our code from local feature/side branch, 
+it goes to REMOTE FEATURE/SIDE branch. It doesn't go to REMOTE MASTER.
+To merge the code from REMOTE FEATURE to REMOTE MASTER, leads will 
+create PULL REQUEST and APPROVE the PULL REQUEST.
+After approval, remote feature codes will be merged in REMOTE MASTER
